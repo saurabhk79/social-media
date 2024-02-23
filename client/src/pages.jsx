@@ -4,6 +4,7 @@ import PostsCard from "./components/PostsCard";
 import FriendsList from "./components/FriendsList";
 import SearchCard from "./components/SearchCard";
 import Signup from "./components/Signup";
+import Login from "./components/Login";
 
 export const HomePage = () => {
   return (
@@ -28,3 +29,12 @@ export const SignupPage = () => {
     </div>
   );
 };
+
+export const LoginPage = () => {
+    return (
+      <div className="page">
+          <Login />
+      </div>
+    );
+  };
+  
