@@ -16,8 +16,8 @@ const Signup = () => {
         <Typography>Let&apos;s get started by signing you up!</Typography>
         <Stack>
           <TextField type="text" label="Username" variant="outlined" />
-          <TextField type="text" label="Email" variant="outlined" />
-          <TextField type="text" label="Password" variant="outlined" />
+          <TextField type="email" label="Email" variant="outlined" />
+          <TextField type="password" label="Password" variant="outlined" />
           <Button>Signup</Button>
         </Stack>
         <Box>
