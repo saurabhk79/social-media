@@ -3,11 +3,12 @@ import Profile from "./components/Profile";
 import PostsCard from "./components/PostsCard";
 import FriendsList from "./components/FriendsList";
 import SearchCard from "./components/SearchCard";
+import Signup from "./components/Signup";
 
 export const HomePage = () => {
   return (
     <>
-      <Stack>
+      <Stack direction={"row"}>
         <Profile />
         <PostsCard />
 
@@ -17,5 +18,13 @@ export const HomePage = () => {
         </Stack>
       </Stack>
     </>
+  );
+};
+
+export const SignupPage = () => {
+  return (
+    <div className="page">
+        <Signup />
+    </div>
   );
 };
