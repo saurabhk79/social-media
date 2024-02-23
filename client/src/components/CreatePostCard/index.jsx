@@ -1,18 +1,16 @@
 import {
-    Avatar,
-    Button,
-    Card,
-    CardContent,
-    Divider,
-    Stack,
-    TextField,
-    Typography,
-  } from "@mui/material";
+  Button,
+  Card,
+  CardContent,
+  Divider,
+  TextField,
+  Typography,
+} from "@mui/material";
 
 const CreatePostCard = () => {
   return (
     <Card sx={{ minWidth: 275 }}>
-    <CardContent>
+      <CardContent>
         <Typography>Create a post</Typography>
         <Divider />
         <TextField
@@ -23,9 +21,9 @@ const CreatePostCard = () => {
         />
 
         <Button variant="contained">Post now!</Button>
-    </CardContent>
-  </Card>
-  )
-}
+      </CardContent>
+    </Card>
+  );
+};
 
-export default CreatePostCard
+export default CreatePostCard;
