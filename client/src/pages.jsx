@@ -5,8 +5,16 @@ import FriendsList from "./components/FriendsList";
 import SearchCard from "./components/SearchCard";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {
+  const navigate = useNavigate();
+  useEffect(()=> {
+    const user = localStorage.getItem("user");
+
+    if (!user) navigate("/login")
+  })
   return (
     <>
       <Stack direction={"row"}>
